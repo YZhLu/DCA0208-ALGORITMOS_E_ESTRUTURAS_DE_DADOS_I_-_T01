@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "quickSort.h"
 
 void swap(int *a, int *b) {
     int temp;
@@ -31,13 +32,13 @@ int partion(int arr[], int init, int fim) {
     return i + 1;
 }
  
-void quick_sort(int arr[], int init, int fim) {
+void quickSort(int arr[], int init, int fim) {
 
     int j;
 
     if (init < fim) {
         j = partion(arr, init, fim);
-        quick_sort(arr, init, j-1);
-        quick_sort(arr, j+1, fim);
+        quickSort(arr, init, j-1);
+        quickSort(arr, j+1, fim);
     }
 }

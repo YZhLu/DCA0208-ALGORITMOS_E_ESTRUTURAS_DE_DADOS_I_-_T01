@@ -1,5 +1,7 @@
+#include "selectionSort.h"
+
 //selectionSort in-Place
-void selectionSortIP(int* v, int tamanho) {
+void selectionSort(int* v, int tamanho) {
     
     // Percorre todo o vetor
     for (int i = 0; i < (tamanho - 1); i++) {

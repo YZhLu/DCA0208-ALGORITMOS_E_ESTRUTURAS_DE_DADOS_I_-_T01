@@ -1,13 +1,14 @@
 #include <stdlib.h>
+#include "quickSort_noRandom.h"
 
-void swap(int *a, int *b) {
+void swap_noRandom(int *a, int *b) {
     int temp;
     temp = *a;
     *a = *b;
     *b = temp;
 }
 
-int partion(int arr[], int p, int r) {
+int partion_noRandom(int arr[], int p, int r) {
 
     int pivotIndex = r;
     int pivot;
@@ -16,28 +17,28 @@ int partion(int arr[], int p, int r) {
     
     pivot = arr[pivotIndex];
     
-    swap(&arr[pivotIndex], &arr[r]);
+    swap_noRandom(&arr[pivotIndex], &arr[r]);
     
     for (j = p; j < r; j++) {
         if (arr[j] < pivot) {
             i++;
-            swap(&arr[i], &arr[j]);
+            swap_noRandom(&arr[i], &arr[j]);
         }
  
     }
     
-    swap(&arr[i+1], &arr[r]);
+    swap_noRandom(&arr[i+1], &arr[r]);
     
     return i + 1;
 }
  
-void quick_sort(int arr[], int p, int q) {
+void quickSort_noRandom(int arr[], int p, int q) {
 
     int j;
 
     if (p < q) {
-        j = partion(arr, p, q);
-        quick_sort(arr, p, j-1);
-        quick_sort(arr, j+1, q);
+        j = partion_noRandom(arr, p, q);
+        quickSort_noRandom(arr, p, j-1);
+        quickSort_noRandom(arr, j+1, q);
     }
 }

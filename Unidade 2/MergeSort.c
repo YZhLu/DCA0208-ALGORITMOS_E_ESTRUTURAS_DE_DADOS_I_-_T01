@@ -1,3 +1,34 @@
+#include <stdlib.h>
+#include "mergeSort.h"
+
+void merge(int* v, int tamV, int* e, int tamE, int* d, int tamD){
+    int indexV = 0;
+    int indexE = 0;
+    int indexD = 0;
+    while(indexE < tamE && indexD < tamD){
+        if(e[indexE] <= d[indexD]){
+            v[indexV] = e[indexE];
+            indexE++;
+        } else{
+            v[indexV] = d[indexD];
+            indexD++;
+        }
+        indexV++;
+    }
+    //ainda poderíamos ter elementos no vetor E que não foram copiados para V
+    while(indexE < tamE){
+        v[indexV] = e[indexE];
+        indexE++;
+        indexV++;
+    }
+    //ainda poderíamos ter elementos no vetor D que não foram copiados para V
+    while(indexD < tamD){
+        v[indexV] = d[indexD];
+        indexD++;
+        indexV++;
+    }
+}
+
 void mergeSort(int* v, int tamV){
     if(tamV>1){
         //primeiro quebramos o vetor em 2 vetores menores

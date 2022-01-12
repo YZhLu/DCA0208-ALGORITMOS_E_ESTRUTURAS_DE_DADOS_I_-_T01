@@ -1,3 +1,5 @@
+#include "bubbleSort.h"
+
 #include <stdbool.h>
 
 void bubbleSort(int* v, int n){    

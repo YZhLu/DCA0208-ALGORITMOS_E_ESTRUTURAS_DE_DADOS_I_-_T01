@@ -1,5 +1,7 @@
-//insertionSort In-Place
-void insertionSortIPV5(int* v, int tamanho) {
+#include "insertionSort.h"
+
+//insertionSort In-Place version 5
+void insertionSort(int* v, int tamanho) {
     for (int i = 1; i < tamanho; i++) {
         int valor = v[i];
         int j;

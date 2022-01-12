@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "countingSort.h"
 
 void countingSort(int arr[], int n) {
   //int newArr[10];
