@@ -1,0 +1,66 @@
+
+ --Execution time of sample 1: 0.001000 seconds
+
+ --Execution time of sample 2: 0.002000 seconds
+
+ --Execution time of sample 3: 0.002000 seconds
+
+ --Execution time of sample 4: 0.002000 seconds
+
+ --Execution time of sample 5: 0.002000 seconds
+
+ --Execution time of sample 6: 0.002000 seconds
+
+ --Execution time of sample 7: 0.001000 seconds
+
+ --Execution time of sample 8: 0.002000 seconds
+
+ --Execution time of sample 9: 0.002000 seconds
+
+ --Execution time of sample 10: 0.002000 seconds
+
+ --Execution time of sample 11: 0.002000 seconds
+
+ --Execution time of sample 12: 0.002000 seconds
+
+ --Execution time of sample 13: 0.001000 seconds
+
+ --Execution time of sample 14: 0.002000 seconds
+
+ --Execution time of sample 15: 0.002000 seconds
+
+ --Execution time of sample 16: 0.002000 seconds
+
+ --Execution time of sample 17: 0.002000 seconds
+
+ --Execution time of sample 18: 0.002000 seconds
+
+ --Execution time of sample 19: 0.002000 seconds
+
+ --Execution time of sample 20: 0.002000 seconds
+
+ --Execution time of sample 21: 0.001000 seconds
+
+ --Execution time of sample 22: 0.002000 seconds
+
+ --Execution time of sample 23: 0.002000 seconds
+
+ --Execution time of sample 24: 0.002000 seconds
+
+ --Execution time of sample 25: 0.002000 seconds
+
+ --Execution time of sample 26: 0.002000 seconds
+
+ --Execution time of sample 27: 0.001000 seconds
+
+ --Execution time of sample 28: 0.002000 seconds
+
+ --Execution time of sample 29: 0.002000 seconds
+
+ --Execution time of sample 30: 0.002000 seconds
+
+ __________________________________________________________ 
+
+ --> Total execution time: 0.070000 seconds
+
+|<<<<<<______________________________________________>>>>>>|

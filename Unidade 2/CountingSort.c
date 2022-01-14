@@ -7,7 +7,6 @@ void countingSort(int arr[], int n) {
 
   int* newArr = (int*)malloc((n)*sizeof(int));
   
-
   int max = arr[0];
   
   // Finding the max
@@ -42,4 +41,7 @@ void countingSort(int arr[], int n) {
   for (int i = 0; i < n; i++) {
     arr[i] = newArr[i];
   }
+
+  free(newArr);
+  free(count_arr);
 }
