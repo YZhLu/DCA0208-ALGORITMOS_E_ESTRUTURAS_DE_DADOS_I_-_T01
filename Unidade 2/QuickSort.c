@@ -2,44 +2,34 @@
 #include <stdio.h>
 #include "quickSort.h"
 
-void swap(int *a, int *b) {
-    int temp;
-    temp = *a;
-    *a = *b;
-    *b = temp;
+
+void swap(int* v, int i, int j){
+    int temp = v[i];
+    v[i] = v[j];
+    v[j] = temp;
 }
 
-int partion(int arr[], int init, int fim) {
+int partion(int* v, int ini, int fim) {
+    
+    int pIndex = ini;
+    int pivo = v[rand()%(fim - ini + 1)]; //gera um número aleatório como pivô  
 
-    int pivotIndex = init + rand()%(fim - init + 1); //gera um número aleatório como pivô    
-    int pivot;
-    int i = init - 1;
-    int j;
-    
-    pivot = arr[pivotIndex];
-    
-    swap(&arr[pivotIndex], &arr[fim]);
-    
-    for (j = init; j < fim; j++) {
-        if (arr[j] < pivot) {
-            i++;
-            swap(&arr[i], &arr[j]);
+    for(int i = ini; i < fim; i++){
+        if(v[i] <= pivo){
+            swap(v, i, pIndex);
+            pIndex++;
         }
- 
     }
+    swap(v,pIndex,fim);
     
-    swap(&arr[i+1], &arr[fim]);
-    
-    return i + 1;
+    return pIndex;
 }
- 
-void quickSort(int* arr, int init, int fim) {
 
-    int j;
+void quickSort(int* v, int ini, int fim) {
 
-    if (init < fim) {
-        j = partion(arr, init, fim);
-        quickSort(arr, init, j-1);
-        quickSort(arr, j+1, fim);
+    if (fim > ini) {
+        int indexPivo = partion(v, ini, fim);
+        quickSort(v, ini, indexPivo - 1);
+        quickSort(v, indexPivo + 1, fim);
     }
 }

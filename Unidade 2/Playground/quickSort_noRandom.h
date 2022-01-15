@@ -7,6 +7,6 @@
  * This is a function declaration.
  * It tells the compiler that the function exists somewhere.
  */
-void  quickSort_noRandom(int* v, int ini, int fim);
+void  quickSort_noRandom(int arr[], int p, int q);
 
 #endif /* QUICKSORT_NORANDOM_DOT_H */

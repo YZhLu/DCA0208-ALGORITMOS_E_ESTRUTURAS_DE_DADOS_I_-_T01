@@ -7,6 +7,6 @@
  * This is a function declaration.
  * It tells the compiler that the function exists somewhere.
  */
-void  quickSort(int* v, int ini, int fim);
+void  quickSort(int* arr, int init, int fim);
 
 #endif /* QUICKSORT_DOT_H */

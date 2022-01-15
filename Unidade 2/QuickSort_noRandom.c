@@ -1,44 +1,31 @@
 #include <stdlib.h>
 #include "quickSort_noRandom.h"
 
-void swap_noRandom(int *a, int *b) {
-    int temp;
-    temp = *a;
-    *a = *b;
-    *b = temp;
+
+void swap_noRandom(int* v, int i, int j){
+    int temp = v[i];
+    v[i] = v[j];
+    v[j] = temp;
 }
 
-int partion_noRandom(int arr[], int p, int r) {
-
-    int pivotIndex = r;
-    int pivot;
-    int i = p - 1;
-    int j;
-    
-    pivot = arr[pivotIndex];
-    
-    swap_noRandom(&arr[pivotIndex], &arr[r]);
-    
-    for (j = p; j < r; j++) {
-        if (arr[j] < pivot) {
-            i++;
-            swap_noRandom(&arr[i], &arr[j]);
+int partion_noRandom(int* v, int ini, int fim) {
+int pIndex = ini;
+    int pivo = v[fim];
+    for(int i = ini; i < fim; i++){
+        if(v[i] <= pivo){
+            swap_noRandom(v,i,pIndex);
+            pIndex++;
         }
- 
     }
-    
-    swap_noRandom(&arr[i+1], &arr[r]);
-    
-    return i + 1;
+    swap_noRandom(v, pIndex, fim);
+    return pIndex;
 }
  
-void quickSort_noRandom(int arr[], int p, int q) {
+void quickSort_noRandom(int* v, int ini, int fim) {
 
-    int j;
-
-    if (p < q) {
-        j = partion_noRandom(arr, p, q);
-        quickSort_noRandom(arr, p, j-1);
-        quickSort_noRandom(arr, j+1, q);
+    if (fim > ini) {
+        int indexPivo = partion_noRandom(v, ini, fim);
+        quickSort_noRandom(v, ini, indexPivo - 1);
+        quickSort_noRandom(v, indexPivo + 1, fim);
     }
 }

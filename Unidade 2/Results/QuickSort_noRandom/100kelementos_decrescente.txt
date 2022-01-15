@@ -1,0 +1,66 @@
+
+ --Execution time of sample 1: 11.535300 seconds
+
+ --Execution time of sample 2: 31.759270 seconds
+
+ --Execution time of sample 3: 30.665817 seconds
+
+ --Execution time of sample 4: 30.448090 seconds
+
+ --Execution time of sample 5: 30.919758 seconds
+
+ --Execution time of sample 6: 31.259918 seconds
+
+ --Execution time of sample 7: 30.400764 seconds
+
+ --Execution time of sample 8: 30.626850 seconds
+
+ --Execution time of sample 9: 30.826405 seconds
+
+ --Execution time of sample 10: 31.097452 seconds
+
+ --Execution time of sample 11: 31.182421 seconds
+
+ --Execution time of sample 12: 30.640579 seconds
+
+ --Execution time of sample 13: 30.169039 seconds
+
+ --Execution time of sample 14: 30.476385 seconds
+
+ --Execution time of sample 15: 30.238453 seconds
+
+ --Execution time of sample 16: 30.459064 seconds
+
+ --Execution time of sample 17: 30.683405 seconds
+
+ --Execution time of sample 18: 30.515617 seconds
+
+ --Execution time of sample 19: 30.653215 seconds
+
+ --Execution time of sample 20: 30.745375 seconds
+
+ --Execution time of sample 21: 30.616455 seconds
+
+ --Execution time of sample 22: 30.501839 seconds
+
+ --Execution time of sample 23: 30.640720 seconds
+
+ --Execution time of sample 24: 30.842972 seconds
+
+ --Execution time of sample 25: 30.853910 seconds
+
+ --Execution time of sample 26: 30.011644 seconds
+
+ --Execution time of sample 27: 29.742041 seconds
+
+ --Execution time of sample 28: 30.074150 seconds
+
+ --Execution time of sample 29: 30.670015 seconds
+
+ --Execution time of sample 30: 30.770746 seconds
+
+ __________________________________________________________ 
+
+ --> Total execution time: 900.036379 seconds
+
+|<<<<<<______________________________________________>>>>>>|

@@ -213,7 +213,7 @@ int main() {
 
     printf("\n\n ########################################################### \n");
 
-    printf("\n%s\n", "sort - 30 samples");
+    printf("\n%s %d %s\n", "sort - ",  samples, "samples");
     printf("\n __________________________________________________________ \n");
     printf("\n%s %d %s\n", "vector", n, "elementos");
     timer(sort, vetor, n, samples);
